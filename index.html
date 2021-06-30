@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		 <meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="favicons/KDRM.png" type="image/x-icon">
+
+<!-- Title -->
+<title>e-TEKSI</title>
+
+<!-- Bootstrap css -->
+<link href="css/css-bootstrap.min.css" rel="stylesheet">
+
+<!-- Style css -->
+<link href="css/css-style.css" rel="stylesheet">
+<link href="css/css-default.css" rel="stylesheet">
+
+<!-- Sidemenu css -->
+<link rel="stylesheet" href="css/sidemenu-sidemenu.css">
+
+<!-- owl-carousel css-->
+<link href="css/owl-carousel-owl.carousel.css" rel="stylesheet">
+
+<!--Bootstrap-daterangepicker css-->
+<link rel="stylesheet" href="css/bootstrap-daterangepicker-daterangepicker.css">
+
+<!--Bootstrap-datepicker css-->
+<link rel="stylesheet" href="css/bootstrap-datepicker-bootstrap-datepicker.css">
+
+<!-- Sidemenu-responsive  css -->
+<link href="css/css-sidemenu-responsive-tabs.css" rel="stylesheet">
+
+<!-- P-scroll css -->
+<link href="css/p-scroll-p-scroll.css" rel="stylesheet" type="text/css">
+
+<!--Font icons css-->
+<link href="css/css-icons.css" rel="stylesheet">
+
+<!-- Rightsidebar css -->
+<link href="css/sidebar-sidebar.css" rel="stylesheet">
+
+<!-- Nice-select css  -->
+<link href="css/css-nice-select.css" rel="stylesheet">
+
+<!-- Color-palette css-->
+<link rel="stylesheet" href="css/css-skins.css">
+
+
+
+
+
+<style>
+    @font-face {
+        font-family: 'hanzel_extendednormal';
+        src: url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/hanzel-extended-normal-webfont.eot');
+        src: url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/hanzel-extended-normal-webfont.eot?#iefix') format('embedded-opentype'),
+            url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/hanzel-extended-normal-webfont.woff2') format('woff2'),
+            url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/hanzel-extended-normal-webfont.woff') format('woff'),
+            url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/hanzel-extended-normal-webfont.ttf') format('truetype'),
+            url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/hanzel-extended-normal-webfont.svg#hanzel_extendednormal') format('svg');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+    
+    @font-face {
+        font-family: 'nexa_lightregular';
+        src: url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/Nexa Light-webfont.eot');
+        src: url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/Nexa Light-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/Nexa Light-webfont.woff2') format('woff2'),
+             url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/Nexa Light-webfont.woff') format('woff'),
+             url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/Nexa Light-webfont.ttf') format('truetype'),
+             url('https://myentry.myxpats.com.my/app/assets/fonts/fonts/Nexa Light-webfont.svg#nexa_lightregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .lang-button{
+    	text-align:right;
+    	margin-top: 20px;
+    }
+    .card{
+        padding: 0 !important;
+    }
+    .card-body-side{
+        padding: 0 !important;
+    }
+    hr{
+        border-top-color: #808183 !important;
+    }
+    .hello{
+        background-color: #0000 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .itools-image{
+        width:60px;
+        height:60px;
+    }
+    .box-esd{
+        /* display: flex; */
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .image-front{
+        padding: 16px;
+    }
+    .page{
+        background-color:#f7f7f7 !important;
+    }
+    .logo-front{
+        width:62%;
+    }
+    .logo-jata{
+        width:100px;
+        height:78px;
+    }
+    .logo-imi{
+        width:98px;
+        height:98px;
+    }
+    .esd-font{
+        font-family: 'hanzel_extendednormal';
+        color: #fff;
+    }
+    .esd-font-box{
+        font-family: 'nexa_lightregular';
+    }
+    .esd-font-small-box{
+        font-family: 'nexa_lightregular';
+    }
+    .esd-font-small{
+        font-family: 'hanzel_extendednormal';
+        color: #fff;
+        font-size: 14px;
+    }
+    .esd-small{
+        font-family: 'nexa_lightregular';
+        color: #fff;
+        font-size: 11px;
+    }
+    .font-white{
+        color: #fff;
+    }
+    .logo-image{
+        width:100px;
+        height:90px;
+    }
+    .logo-image-jata{
+        width:110px;
+        height:90px;
+    }
+    .landing-aside{
+        flex: 0 0 20% !important;
+    }
+    .img-login{
+        width: 100%;
+        height:100%;
+    }
+    /* body{
+        background-image: linear-gradient(to right, #cecece , #fff);
+    } */
+    .page{
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table;
+    }
+    .footer-main{
+        padding: 0 !important;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #03002d;
+        color:#fff;
+    }
+    .login-card{
+        min-height: 500px;
+    }
+    .side-landing{
+        background: #4267B2;
+        bottom:0;
+        min-height: 100vh;
+    }
+    @media only screen and (max-width: 765px) {
+        .side-landing {
+            min-height: 100%;
+        }
+    }
+    .underline {
+        border-bottom: 2px solid #8a8383;
+    }
+    .esd-font-tittle{
+        font-size:20px;
+    }
+    body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>	
+
+</head>
+	<body class="app">
+		<!-- Loader -->
+		<div id="loading">
+			<img src="images/other-loader.svg" class="loader-img" alt="Loader">
+		</div>
+
+		<!-- container opened -->
+		<div class="page">
+			<div class="page-main">
+				<div class="col-xl-12">
+					<div class="">
+						<div class="row">
+							<div class="side-landing col-md-3 col-lg-3">
+								<div class="card-body p-6 about-con pabout">
+									<div class="card-title text-center  mb-4">
+										<img src="images/myxpats-jata_negara.png" class="logo-jata" alt="MyXpats logo">&nbsp;&nbsp;
+										<img src="images/Crest_of_the_Royal_Malaysian_Customs.svg" class="logo-imi" alt="MyXpats logo"><br><br>
+										<h3 class="esd-font font-weight-bold dark-grey-text">BAHAGIAN PERKASTAMAN CAWANGAN EKSAIS</h3><br>
+										
+                                        <hr>
+                                            <font class="esd-font-small font-weight-bold">Jabatan Kastam Diraja Malaysia</font><br>
+                                            <font class="esd-font-small font-weight-bold">Zon Tengah, Unit 1 (WPKL)</font><br>
+                                            
+                                        <font class="esd-small">
+                                            Ketua Cawangan Eksais 
+                                            Aras 2, Block A, 
+                                            Kompleks Kastam Kompleks WPKL,
+                                            No 22, Jalan SS6/3, Kelana Jaya,
+                                            47301 Petaling Jaya,
+                                            Selangor
+                                            </font>
+                                        
+                                            <p><font class="esd-small">Tel: 03-7884 0800</font></p>
+                                            
+                                            
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 col-lg-9">
+							<div class="lang-button">
+								<button type="button" class="btn btn-info">BM</button>
+								<button type="button" class="btn btn-Basic">ENG</button>
+							</div>
+								<div class="row">
+									<div class="col-md-12 col-lg-4 col-xl-4">
+									</div>
+									<div class="col-md-12 col-lg-4 col-xl-4 text-center" style="padding-top:30px">
+										<img src="https://i.ibb.co/b1LhD9R/6654530.png" class="desktop-logo logo-front " alt="MyXpats logo">
+										<hr>
+									</div>
+									<div class="col-md-12 col-lg-4 col-xl-4">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+									<div class="col-md-12 col-lg-6 col-xl-6">
+										<div class="card hello card-aside overflow-hidden">
+											
+											<div class="card-body-side d-flex flex-column box-esd">
+												<div class="esd-font-small-box text-justify"><span> Laman sesawang ini membenarkan pemilik kenderaan Teksi Untuk menghantar permohonan pengecualian Pembayaran Duti Eksais dan Cukai Jualan. Sebarang pertanyaan, sila hubungi 03-7884 0800 Samb. 2551 / 2066 / 2062. </span></div>
+                                                
+											</div>
+										
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+									<div class="col-md-12 col-lg-6 col-xl-6">
+										<div class="card card-aside overflow-hidden">
+											<div class="card-aside-column w-10 landing-aside"><img src="images/taxi-sign.png" class="logo-image text-center image-front" alt=""></div>
+											<div class="card-body-side d-flex flex-column box-esd">
+												<h4 class="esd-font-box font-weight-bold"><a href="app/app.html">PERMOHONAN e-TEKSI</a></h4>
+												
+											</div>
+											
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+									<div class="col-md-12 col-lg-6 col-xl-6">
+										<div class="card card-aside overflow-hidden">
+											<div class="card-aside-column w-10 landing-aside"><img src="images/myxpats-check.png" class="logo-image text-center image-front" alt=""></div>
+											<div class="card-body-side d-flex flex-column box-esd">
+												<h4 class="esd-font-box font-weight-bold"><a href="checkstatus/checkstatus.html">SEMAKAN STATUS PERMOHONAN e-TEKSI</a></h4>
+											</div>
+											
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+									<div class="col-md-12 col-lg-6 col-xl-6">
+										<div class="card card-aside overflow-hidden p-1">
+											<div class="card-aside-column w-10 landing-aside"><img src="images/myxpats-jata_negara.png" class="logo-image-jata text-center image-front" alt=""></div>
+											<div class="card-body-side d-flex flex-column box-esd" style="padding-top:10px !important;">
+												<h4 class="esd-font-box font-weight-bold"><a href="login/login.html">JABATAN KASTAM DIRAJA MALAYSIA</a></h4>
+												<div class="text-muted esd-font-small-box">
+													
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+									<div class="col-md-12 col-lg-3 col-xl-3">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <footer class="footer-main">
+			<div class="container">
+				<div class="  mt-2 mb-2 text-center">
+					Copyright &copy; 2020 MyXpats All rights reserved.
+				</div>
+			</div>
+		</footer> -->
+		<!-- container closed -->
+		
+        <h2>Popup Chat Window</h2>
+        <p>Click on the button at the bottom of this page to open the chat form.</p>
+        <p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
+        
+        <button class="open-button" onclick="openForm()">Tanya</button>
+        
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h5>Tanya @ Pegawai Kastam</h5>
+        
+            <label for="msg"><b>Mesej</b></label>
+            <textarea placeholder="Tulis mesej..." name="msg" required></textarea>
+        
+            <button type="submit" class="btn">Hantar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
+          </form>
+        </div>
+        
+        <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+        
+	</body>
+</html><!-- Dashboard js --><html><script src="js/vendors-jquery.min.js"></script>
+<script src="js/bootstrap-popper.min.js"></script>
+<script src="js/js-bootstrap.min.js"></script>
+<script src="js/vendors-jquery.sparkline.min.js"></script>
+<script src="js/vendors-circle-progress.min.js"></script>
+<script src="js/rating-jquery.rating-stars.js"></script>
+
+<!--Moment js-->
+<script src="js/moment-moment.min.js"></script>
+
+<!-- Custom scroll bar js-->
+<script src="js/scroll-bar-jquery.mCustomScrollbar.concat.min.js"></script>
+
+<!--owl-carousel js-->
+<script src="js/owl-carousel-owl.carousel.js"></script>
+
+<!-- Bootstrap-daterangepicker js -->
+<script src="js/bootstrap-daterangepicker-daterangepicker.js"></script>
+
+<!-- Bootstrap-datepicker js -->
+<script src="js/bootstrap-datepicker-bootstrap-datepicker.js"></script>
+
+<!--Counters -->
+<script src="js/jquery-countdown-countdown.js"></script>
+<script src="js/jquery-countdown-jquery.plugin.min.js"></script>
+<script src="js/jquery-countdown-jquery.countdown.js"></script>
+
+<!-- Custom js-->
+<script src="js/js-custom.js"></script>
+<script src="js/js-login.js"></script></html>
